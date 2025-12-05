@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 package org.knowm.xchart.internal.chartpart;
-
-import java.awt.Graphics2D;
+// read https://docs.oracle.com/javase/8/docs/technotes/guides/2d/spec/j2d-awt.html
+import java.awt.Graphics2D;     // https://docs.oracle.com/javase/8/docs/api/java/awt/Graphics2D.html
 import java.awt.Rectangle;
 import java.awt.Shape;
 import java.awt.geom.Line2D;
-import java.awt.geom.Path2D;
+import java.awt.geom.Path2D;    // https://docs.oracle.com/javase/8/docs/api/java/awt/geom/Path2D.html
 import java.awt.geom.Rectangle2D;
 import java.util.Collection;
 import java.util.Date;
@@ -299,6 +299,7 @@ public class PlotContentLineChart extends PlotContent {
       path.lineTo(previousX, yBottomOfArea);
       path.closePath();
       g.fill(path);
+      g.f
     }
   }
 
